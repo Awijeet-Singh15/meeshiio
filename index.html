@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .nav1{
+        display: flex;
+        flex-direction: row;
+        height: 6vh;
+        width: 100vw;
+        border-bottom: 1px solid black;
+        border-radius: 6px;
+        position: sticky;
+    }
+   #img1{
+    height:5vh;
+    width: 19vw;
+    
+   }
+   #img1:hover{
+    transform: scale(1.01);
+   }
+  #input{
+    width: 35vw;
+    height: 5vh;
+  }
+  .down{
+    display: flex;
+    flex-direction: row;
+    margin: 7px;
+    width: 14vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .meshoicon{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 0%;
+    padding-left: 0%;
+  }
+  #phone{
+    height:5vh;
+    width:1.8vw;
+  }
+  .become{
+    height: 5vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  .be{
+    height:5vh;
+    display: flex;
+    align-items: center;
+  }
+  #addto{
+    height: 5vh;
+    width: 5vw;
+  }
+  .end{
+    display: flex;
+    flex-direction: row;
+  }
+  a{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    color: black;
+  }
+ 
+  .cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav2{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    height: 6vh;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    border-bottom: 1px solid black;
+    position: sticky;
+  }
+  .cont2{
+    display: flex;
+    height: 50vh;
+    width: 90vw;
+    flex-direction: row;
+    margin-top: 60px;
+   background-color: rgb(253, 220, 240);
+   margin-bottom: 1vh;
+   
+  
+  }
+  .card{
+    display: flex;
+    height: 50vh;
+    width: 90vw;
+    flex-direction: row;
+    align-items: center;
+    background: #556270; 
+    background: -webkit-linear-gradient(to right, #FF6B6B, #556270); 
+    background: linear-gradient(to right, #FF6B6B, #556270);
+    margin-bottom: 4rem;
+
+  }
+  .box2{
+    width: 45vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .boxi4:hover{
+    background-color: rgb(255, 0, 0);
+    color: aliceblue;
+    padding: 8px;
+    transform: scale(1.1);
+  }
+  #img4{
+    height: 50vh;
+    width: 45vw;
+    
+  }
+  #img69{
+    height: 40vh;
+    width: 30vw;
+  }
+  .card1{
+    display: flex;
+    height: 50vh;
+    width:35vw;
+    justify-content: center;
+    align-items: center;
+  }
+  h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    font-style: italic;
+  }
+  h2{
+    border-right: 1px solid black;
+  }
+  .boxi1{
+    margin-top: 69px;
+  }
+  .boxi3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 40px;
+    background-color: azure;
+   
+  }
+  .ram{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size:x-large;
+    font-weight: bold;
+   
+  }
+   .dropdown{
+    display: none;
+    height:auto;
+    width: 100px;
+    position:absolute;
+    left:0;
+    top: 25px;
+    border:1px solid black;
+    border-radius: 8px;
+    background-color: rgb(241, 91, 121);
+   }
+ 
+  .ram:hover .dropdown{
+    
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  }
+  
+  .top{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 84px;
+    text-shadow: 2px 3px 10px black;
+  }
+  .card2{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 55vw;
+   justify-content: center;
+   align-items: center;
+  }
+  #kid{
+    height: 30vh;
+    width: 26vw;
+    margin-right: 1rem;
+  }
+  .imag{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.2rem;
+   
+  }
+  .park{
+    height: 50vh;
+    width: 90vw;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    display: flex;
+    flex-direction: row;
+     margin-bottom: 9vh;
+  }
+  .images{
+    display: flex;
+    width:70vw;
+    height: 50vh;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .new{
+     height: 50vh;
+     width: 20vw;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap:5vh;
+  }
+  #sita{
+    height: 44vh;
+    width: 20vw;
+  }
+  .view{
+    height: 8vh;
+    width: 12vw;
+    background-color: crimson;
+    color: aliceblue;
+    border-radius: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #aao{
+    font-size: 7vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .view:hover{
+     background-color: rgba(253, 107, 107, 0.928);
+     color: black;
+  }
+  #jao{
+    height: 50vh;
+    width: 90vw;
+  }
+  .sign:hover {
+   transform:scale(.9);
+   color: #FF6B6B;
+   background: #DBE6F6;
+    background: -webkit-linear-gradient(to right, #C5796D, #DBE6F6); 
+    background: linear-gradient(to right, #C5796D, #DBE6F6);
+  }
+  .aa:hover{
+     transform: scale(1.09);
+  }
+  .you{
+    align-self: start;
+  }
+  h3{
+    font-size:5vh;
+    font-style: italic;
+   
+  }
+  .you{
+    margin: 0 1rem 1rem 2rem;
+   
+  }
+  .dabba{
+    align-self: start;
+    height: 7vh;
+    width: 17vw;
+    background-color: #DBE6F6;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+  #selector1{
+    font-size: large;
+  }
+  .import{
+    display: flex;
+
+  }
+  .you{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    gap: 0.4rem;
+  }
+  .maingrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(8,1fr);
+   
+    width:75vw;
+    gap:8px;
+  }
+  .jai{
+    display: flex;
+    width: 18.25vw;
+    height: 40vh;
+   
+    gap: 2px;
+  }
+  #rama{
+    width: 18.25vw;
+    height: 40vh;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+  #foot{
+    height: 50vh;
+    width: 95vw;
+  }
+</style>
+    
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <nav class="nav1">
+        <div class="meshoicon"><img src="meshoimg.png" id="img1"></div>
+        <div class="search"><input id="input" type="text" placeholder="search for iteams"></div>
+        <div class="down">
+            <div class="phoneimg"><img id="phone" src="phoneicon.png"></div>
+            <a href="#"><div class="phonedown"><p>Download</p></div>
+            </a>
+    </div>
+        <div class="become" ><a href="#" class="be">Become a supplyer</a></div>
+        <div class="end">
+            <div><img  id="addto" src="cartimg.png"></div>
+            <div class="cart"><a class="cart"  href="#">Cart</a></div>
+        </div>
+        
+    </nav>
+    <nav class="nav2">
+        <div class="ram">Men's
+          <div class="dropdown">
+            <a href="#">saree</a><br>
+            <a href="#">shirt</a><br>
+            <a href="#">pant</a><br>
+            <a href="#">tshirt</a><br>
+          </div>
+        </div>
+       <div class="ram">Women's
+        <div class="dropdown">
+          <a href="#">saree</a><br>
+          <a href="#">shirt</a><br>
+          <a href="#">pant</a><br>
+          <a href="#">tshirt</a><br>
+        </div>
+       </div>
+       <div class="ram">Kids
+        <div class="dropdown">
+          <a href="#">saree</a><br>
+          <a href="#">shirt</a><br>
+          <a href="#">pant</a><br>
+          <a href="#">tshirt</a><br>
+        </div>
+       </div>
+        <div class="ram">Free
+          <div class="dropdown">
+            <a href="#">saree</a><br>
+            <a href="#">shirt</a><br>
+            <a href="#">pant</a><br>
+            <a href="#">tshirt</a><br>
+          </div>
+        </div>
+        <div class="ram">Electronics
+          <div class="dropdown">
+            <a href="#">saree</a><br>
+            <a href="#">shirt</a><br>
+            <a href="#">pant</a><br>
+            <a href="#">tshirt</a><br>
+          </div>
+        </div>
+       <div class="ram">Boys
+        <div class="dropdown">
+          <a href="#">saree</a><br>
+          <a href="#">shirt</a><br>
+          <a href="#">pant</a><br>
+          <a href="#">tshirt</a><br>
+        </div>
+       </div>
+       <div class="ram">Western
+        <div class="dropdown">
+          <a href="#">saree</a><br>
+          <a href="#">shirt</a><br>
+          <a href="#">pant</a><br>
+          <a href="#">tshirt</a><br>
+        </div>
+       </div>
+       <div class="ram">Eastern
+        <div class="dropdown">
+          <a href="#">saree</a><br>
+          <a href="#">shirt</a><br>
+          <a href="#">pant</a><br>
+          <a href="#">tshirt</a><br>
+        </div>
+       </div>
+        <div class="ram">Indian
+          <div class="dropdown">
+            <a href="#">saree</a><br>
+            <a href="#">shirt</a><br>
+            <a href="#">pant</a><br>
+            <a href="#">tshirt</a><br>
+          </div>
+        </div>
+    </nav>
+    <div class="cont2">
+        <div class="box2">
+            <div class="boxi1"><h1>Lowest Prices</h1></div>
+            <div class="boxi2"><h1>Best Quality Shoping</h1></div>
+            <div class="boxi3">
+                <div class="ip1"><h2>Free Dalivary</h2></div>
+                <div class="ip2"><h2>COD</h2></div>
+                <div class="ip3"><h2>Easy Return</h2></div>
+            </div>
+            <a href="#"><div class="boxi4"><h3>Download the meesho app</h3></div></a>
+        </div>
+        <div class="box1">
+            <img id="img4" src="shoping.png">
+           </div>
+    </div>
+    <div class="top">Top category to choose from</div>
+    <div class="card">     
+    <a href="#"><div class="card1"><img src="womenstore.png" id="img69"></div></a>
+    
+        <div class="card2">
+           <div class="text"><h1> Be Fashion Forward </h1></div>
+           <div class="imag">
+           <a href="#"><div class="imga"><img id="kid" src="kidsstore.png"></div></a>
+           <a href="#"> <div class="imgb"><img id="kid" src="menstore.png"></div></a>
+           </div>
+    </div>
+  </div>
+  <div class="park">
+    <div class="new">
+      <div><h1>New Styles</h1></div>
+     <a href="#"><div class="view"><p id="aao">  VIEW  </p></div></a>
+    </div>
+    <div class="images">
+      <a href="#"><div class="aa"><img id="sita" src="electronics.png" > </div></a>
+      <a href="#"><div class="aa"><img id="sita" src="accessories.png"></div></a>
+      <a href="#"><div class="aa"><img id="sita" src="footwear.png"> </div></a>
+    </div>
+  </div>
+  <div class="park">
+   
+    <div class="images">
+      <a href="#"><div class="aa"><img id="sita" src="heatth.png" > </div></a>
+      <a href="#"><div class="aa"><img id="sita" src="home.png"></div></a>
+      <a href="#"><div class="aa"><img id="sita" src="kitchen.png"> </div></a>
+    </div>
+    <div class="new">
+      <div><h1> Essentials </h1></div>
+     <a href="#"><div class="view"><p id="aao">  VIEW  </p></div></a>
+    </div>
+  </div>
+  <div class="park">
+   <a href="#"><div class="sign">
+      <img id="jao" src="jao.png">
+    </div>
+    </a>
+  </div>
+  <div class="import">
+  <div class="you">
+    <h3>Products for you</h3>
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+       Gender
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Male</a></li>
+        <li><a class="dropdown-item" href="#">Female</a></li>
+        <li><a class="dropdown-item" href="#">other</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">below 8 month</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Color
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Fibric
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Price
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Fibers
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Assecories
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Decoration
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Brand
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Choices
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Essentials
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Daily use
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Important
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Occasional
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="maingrid">
+    <a href="#"><div class="jai"><img id="rama" src="photo1.png"></div></a>
+    <a href="#"><div class="jai"><img id="rama" src="photo2.png"></div></a>
+      <a href="#"><div class="jai"><img id="rama" src="photo3.png"></div></a>
+        <a href="#"><div class="jai"><img id="rama" src="photo4.png"></div></a>
+          <a href="#"> <div class="jai"><img id="rama" src="photo5.png"></div></a>
+            <a href="#"> <div class="jai"><img id="rama" src="photo6.png"></div></a>
+              <a href="#"> <div class="jai"><img id="rama" src="photo7.png"></div></a>
+                <a href="#"> <div class="jai"><img id="rama" src="photo8.png"></div></a>
+                  <a href="#"><div class="jai"><img id="rama" src="photo1.png"></div></a>
+                    <a href="#"><div class="jai"><img id="rama" src="photo3.png"></div></a>
+                      <a href="#"><div class="jai"><img id="rama" src="photo1.png"></div></a>
+                        <a href="#"> <div class="jai"><img id="rama" src="photo2.png"></div></a>
+                          <a href="#"> <div class="jai"><img id="rama" src="photo5.png"></div></a>
+                            <a href="#"> <div class="jai"><img id="rama" src="photo8.png"></div></a>
+                              <a href="#"><div class="jai"><img id="rama" src="photo7.png"></div></a>
+                                <a href="#"> <div class="jai"><img id="rama" src="photo6.png"></div></a>
+                                  <a href="#"><div class="jai"><img id="rama" src="photo1.png"></div></a>
+                                    <a href="#"><div class="jai"><img id="rama" src="photo2.png"></div></a>
+    <a href="#"><div class="jai"><img id="rama" src="photo3.png"></div></a>
+    <a href="#"><div class="jai"><img id="rama" src="photo4.png"></div></a>
+    <a href="#"><div class="jai"><img id="rama" src="photo5.png"></div></a>
+    <a href="#"><div class="jai"><img id="rama" src="photo6.png"></div></a>
+    <a href="#"><div class="jai"><img id="rama" src="photo7.png"></div></a>
+    <a href="#"><div class="jai"><img id="rama" src="photo8.png"></div></a>
+    <a href="#"><div class="jai"><img id="rama" src="photo1.png"></div></a>
+    <a href="#"><div class="jai"><img id="rama" src="photo3.png"></div></a>
+    <a href="#"><div class="jai"><img id="rama" src="photo1.png"></div></a>
+    <a href="#"><div class="jai"><img id="rama" src="photo2.png"></div></a>
+    <a href="#"><div class="jai"><img id="rama" src="photo5.png"></div></a>
+    <a href="#"><div class="jai"><img id="rama" src="photo8.png"></div></a>
+    <a href="#"><div class="jai"><img id="rama" src="photo7.png"></div></a>
+    <a href="#"><div class="jai"><img id="rama" src="photo6.png"></div></a>
+  </div>
+  </div>
+ <div class="footer"><a href="https://www.facebook.com/meeshosupply"><img id="foot" src="footer.png"></a></div>
+
+ 
+
+</body>
+</html>
